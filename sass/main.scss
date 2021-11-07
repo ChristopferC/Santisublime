@@ -1,0 +1,31 @@
+@import "base/variables";
+@import "base/extend";
+
+@import "components/header";
+@import "components/contacto";
+@import "components/novedades";
+
+.dropdown-menu{
+    background-image: nth($colores, 1);
+}
+
+.domi{
+    height: map-get($map: $altos, $key: domicilio);
+    width: map-get($map: $anchos, $key: domicilio);
+}
+
+.inst{
+    height: map-get($map: $altos, $key: instagram);
+    width: map-get($map: $anchos, $key: instagram); 
+}
+
+.face{
+    height: map-get($map: $altos, $key: facebook);
+    width: map-get($map: $anchos, $key: facebook);
+}
+
+.logo{
+    height: map-get($map: $altos, $key: logo);
+    width: map-get($map: $anchos, $key: logo);
+    margin-left: 3rem; 
+}

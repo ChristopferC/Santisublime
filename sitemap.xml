@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://127.0.0.1:5500/index</loc>
+        <lastmod>2021-11-3T16:12:20-03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:5500/menu/productosSublimados</loc>
+        <lastmod>2021-11-3T16:17:29-03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:5500/menu/productosParaSublimar</loc>
+        <lastmod>2021-11-3T16:15:20-03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:5500/menu/novedades</loc>
+        <lastmod>2021-11-3T16:17:29-03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:5500/menu/contacto</loc>
+        <lastmod>2021-11-3T16:18:20-03:00</lastmod>
+    </url>
+</urlset>

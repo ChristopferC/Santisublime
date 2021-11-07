@@ -1,0 +1,18 @@
+.listaMenu li{
+    @extend %flexboxLista;
+}
+
+.log{
+    height: $log-height;
+    margin: $log-margin;
+    width: $log-width;
+    border-radius: $log-border;
+}
+
+.buscar{
+    background-color: $color-buscar;
+}
+
+.insta{
+    @include images (70px, 1.2rem, 0.8rem, 70px);
+}

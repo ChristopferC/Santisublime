@@ -1,0 +1,40 @@
+.ubicacion{
+    display: flex;
+    height: 340px;
+    width: 320px; 
+}
+
+.location{
+    margin-top: 8px;
+    height: 320px;
+    width: 520px; 
+}
+
+.local{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    height: 30rem;
+}
+
+.local1{
+    grid-area: 1 / 1 / 2 / 6; }
+
+.local2{
+    grid-area: 2 / 2 / 3 / 3; }
+
+.local3{
+    grid-area: 2 / 3 / 3 / 4; }
+
+.local4{
+    grid-area: 2 / 4 / 3 / 6; 
+    margin-right: 3rem;
+} 
+
+.pedido{
+    margin-top: 1rem;
+    width: 30rem;
+    height: 22rem;
+}

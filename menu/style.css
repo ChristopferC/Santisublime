@@ -1,0 +1,537 @@
+/*UNIVERSAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #13263f;
+}
+
+/*HEADER*/
+nav{
+    align-content: flex-start;
+    background-image: linear-gradient(to right, #e5d5b9, #e5d5b9);
+    display: flex;
+    padding: 10px; 
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all;
+}
+
+.listaMenu{
+    display: flex;
+    line-height: 3rem;
+    margin-top: 30px;
+}
+
+/* .subMenu{
+    background-image: radial-gradient(circle at 50%, #00b4b9, #00767d);
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: none;
+    left: 0;
+    margin-left: 355px;
+    position: absolute;
+    margin-top: 40px;
+} */
+
+a:hover{
+    color: #f0a92c;
+}
+
+.subMenu li{
+    display: block;
+    margin-left: 0;
+    padding: 10px;
+    text-align: left;
+    transition: all;
+}
+
+.productosSubli:hover ~ .subMenu{
+    display: block;
+}
+
+.productosparaSubli{
+    position: relative;
+    height: 300%;
+    z-index: 1;
+}
+
+/* .subMenudos{
+    background-image: radial-gradient(circle at 50%, #00b4b9, #00767d);
+    border:1px solid #000;
+    border-radius: 5px;
+    display: none;
+    left: 0;
+    margin-left: 645px;
+    position: absolute;
+    margin-top: 40px;
+} */
+
+.subMenudos li{
+    display: block;
+    margin-left: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.productosparaSubli:hover ~ .subMenudos{
+    display: block;
+} 
+
+.eslogan img{
+    width: 100%;
+    height: 40rem;
+}
+
+/*MAIN*/
+main{
+    background-color: #e5d5b9;
+}
+
+.curvTitulo{
+    color: #125636;
+    font-family: 'Ephesis', cursive;
+    font-size: 60px;
+    line-height: 7rem;
+    text-align: center;
+}
+
+.letra{
+    color: #615f2d;
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.letraS{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem;
+}
+
+.novedad{
+    background-image: none;
+    color: #194069;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 27rem;
+}
+
+h1{
+    color: #194069;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 6rem;
+    text-align: center;
+    word-spacing: 0.4rem;
+}
+
+h2{
+    color: #194069;
+    font-family: 'Roboto', sans-serif;
+    line-height: 5rem;
+    text-align: center;
+}
+
+/*SECTION*/
+section{
+    background-color: #e2e2e2;
+}
+
+h3{
+    color: #5f0b03;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    animation-name: nuevosArticulos;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+.seccionNovedad{
+    line-height: 5rem;
+}
+
+.paginaPrin{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+}
+
+.videoPrin{
+    height: 480px;
+    width: 640px;
+}
+
+.texto{
+    background-color: #fdfe45;
+    width: 700px;
+    height: 470px;
+    display: flex;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+}
+    
+.videoSubli{
+    height: 480px;
+    width: 1200px;
+}
+
+.formulario{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    justify-content:space-around;
+}
+
+.tazas{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+    grid-template-rows: 0fr repeat(2, 1fr) 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 1px;
+}
+
+.almohadas{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+    grid-template-rows: 0fr repeat(2, 1fr) 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 1px;
+}
+
+.termosSublimar{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+    grid-template-rows: 0fr repeat(2, 1fr) 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 1px;
+}
+
+.mochilasSublimar{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+    grid-template-rows: 0fr repeat(2, 1fr) 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 1px;
+}
+
+.artículos{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+    grid-template-rows: 0fr repeat(2, 1fr) 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 1px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+.div2 {
+    grid-area: 5 / 1 / 6 / 6;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 5 / 3;
+    justify-self: center;
+}
+
+.div4 { 
+    grid-area: 2 / 3 / 5 / 4; 
+    justify-self: center;
+    align-self: center;
+}
+
+.div5 { 
+    grid-area: 2 / 4 / 5 / 5; 
+    justify-self: center;
+}
+
+.section_carousel{
+    width: 20rem;
+    background-color: #936697;
+    margin-top: 3rem;
+}
+.first{
+    margin-left: 1rem;
+}
+
+.cuadro{
+    background-color: #e2e2e2;
+    width: 40%;
+}
+
+.img{
+    width: 20rem;
+}
+
+.carousel-item{
+    height: 25rem;
+    margin-top: 2rem;
+}
+
+.carousel-item img{
+    height: 25rem;
+}
+
+.div10{
+    display: flex;
+    justify-content: center;
+}
+
+.fluid{
+    display: flex;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+
+.sorpresa2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 59px;
+    grid-row-gap: 0px;
+    height: 25rem;
+}
+
+.boton{
+    width: 15%;
+}
+    
+@media (max-width: 1200px){
+    .section_carousel{
+        width: 20rem;
+    }
+    
+    .carousel-item{
+        height: 20rem;
+    }
+    
+    .carousel-item img{
+        height: 20rem;
+    }
+
+    .eslogan img{
+        width: 100%;
+        height: 25rem;
+    }
+
+    .videoSubli{
+        height: 320px;
+        width: 240px;
+    }
+
+    .videoPrin{
+        height: 320px;
+        width: 240px;
+    }
+
+    .curvTitulo{
+        color: #125636;
+        font-family: 'Ephesis', cursive;
+        font-size: 20px;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    .letraS{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 2rem;
+        padding: 1rem;
+    }
+
+    .letra{
+        color: #615f2d;
+        font-family: 'Ephesis', cursive;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 300px){
+    .section_carousel{
+        width: 15rem;
+    }
+    
+    .carousel-item{
+        height: 15rem;
+    }
+    
+    .carousel-item img{
+        height: 15rem;
+    }
+    .nuevo{
+        height: 320px !important;
+        width: 240px !important;
+    }
+    
+    .ubicacion{
+        height: 320px !important;
+        width: 240px !important;
+    }
+}
+.div12{
+    grid-area: 1 / 2 / 3 / 3;
+    margin-top: 2rem;
+}
+
+.div13{
+    grid-area: 1 / 3 / 3 / 4;
+    margin-top: 2rem;
+}
+
+.div14{
+    grid-area: 1 / 4 / 3 / 5;
+    margin-top: 2rem;
+}
+
+.div15{
+    grid-area: 3 / 1 / 4 / 6;
+    justify-self: center;
+    margin-top: 20rem;
+}
+
+@keyframes nuevosArticulos{
+    0% {color:#f0a92c}
+}
+
+section img{
+    height: 320px;
+    width: 320px; 
+}
+
+article a{
+    color: #125a38;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+section a{
+    color: #125a38;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+/*SECTION CONTACTO*/
+.face2{
+    margin-left:35rem;
+}
+
+.redes img{
+    height: 100px;
+    width: 95px; 
+}
+
+.redes a{
+    color: #125a38;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faceLink{
+    margin-left:35rem;
+}
+
+.nuevo{
+    height: 340px;
+    width: 320px; 
+}
+
+.wsp{
+    margin-left:38rem;
+    animation: heartBeat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.wspLink{
+    margin-left:36.5rem;
+}
+
+#pedido{
+    animation-name: nuevosArticulos;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    color: #0b961e;
+    text-align: left;
+}
+
+/*MAIN CONTACTO*/
+
+/*FOOTER*/
+.fot{
+    background-color: #aacdd1;
+}
+
+.fot2{
+    padding: 1rem;
+    background-color: #aacdd1;
+}
+
+.faceb{
+    height: 35px;
+    width: 35px;
+}
+
+.correo{
+    height: 25px;
+    width: 25px;
+}
+
+.copy{
+    background-color: #13263f;
+    color: white;
+}
+
+span{
+    color: #130d1c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.direc{
+    margin-left: 3rem;
+}
+
+iframe{
+    border: 0;
+    height:100px;
+    margin-left: 1rem;
+    width:125px; 
+}
