@@ -10,13 +10,12 @@
   text-decoration: none; }
 
 .log {
-  height: 70px;
-  margin: 0.8rem;
-  width: 200px;
-  border-radius: 4px; }
-
-.buscar {
-  background-color: #2bc9a0; }
+  height: 150px;
+  width: 150px;
+  border-radius: 4px; 
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
 
 .insta {
   height: 70px;
@@ -63,9 +62,6 @@
 .ubicacion {
   height: 340px;
   width: 320px; }
-
-.dropdown-menu {
-  background-image: radial-gradient(circle at 50%, #e5d5b9, #e5d5b9); }
 
 .domi {
   height: 20px;

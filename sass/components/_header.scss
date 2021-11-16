@@ -9,10 +9,37 @@
     border-radius: $log-border;
 }
 
-.buscar{
-    background-color: $color-buscar;
-}
-
 .insta{
     @include images (70px, 1.2rem, 0.8rem, 70px);
+}
+
+nav{
+    align-content: flex-start;
+    display: flex;
+    padding: 10px; 
+    background-color: black;
+    z-index: 1;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all;
+}
+
+.listaMenu{
+    display: flex;
+    line-height: 3rem;
+    margin-top: 30px;
+}
+
+
+a:hover{
+    color: #f0a92c;
+}
+
+.eslogan img{
+    width: 100%;
+    height: 40rem;
 }

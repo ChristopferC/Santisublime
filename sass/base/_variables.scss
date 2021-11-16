@@ -1,13 +1,15 @@
-$color-buscar: #2bc9a0;
 $log-height: 70px;
 $log-margin: 0.8rem;
 $log-width: 200px;
 $log-border: 4px;
 
-$colores:
-radial-gradient(circle at 50%, #e5d5b9, #e5d5b9),
-#936697,
-#a9cfcf;
+$colores:(
+    buscar: #a53114;
+    #936697;
+    #a9cfcf
+
+);
+
 
 $altos:(
     domicilio: 20px,
