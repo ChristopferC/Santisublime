@@ -4,10 +4,9 @@ $log-width: 200px;
 $log-border: 4px;
 
 $colores:(
-    buscar: #a53114;
-    #936697;
+    buscar: #a53114,
+    #936697,
     #a9cfcf
-
 );
 
 
@@ -23,4 +22,48 @@ $anchos:(
     instagram: 95px,
     facebook: 100px,
     logo: 200px
+);
+
+$color:(
+    letra1: #125636,
+    letra2: #615f2d,
+    letra3: #194069,
+    letra4: #5f0b03,
+    letra5: white,
+    letra6: #125a38,
+    letra7: #130d1c,
+);
+
+$fuente:(
+    fuente1: 'Ephesis' 'cursive',
+    fuente2: 'Roboto' 'sans-serif',
+);
+
+$tama:(
+    tama1: 60px,
+    tama2: 30px,
+    tama3: 20px,
+    tama4: 40px,
+    tama5: 50px,
+    tama6: 15px,
+    tama7: 10px,
+    tama8: 26px,
+);
+
+$distancia:(
+    dis1: 7rem,
+    dis2: 2rem,
+    dis3: 6rem,
+    dis4: 5rem,
+    dis5: 3rem,
+    dis6: 4rem,
+);
+
+$alineacion:(
+    alig1: center,
+);
+
+$negrita:(
+    negrita1: bolder,
+    negrita2: 600,
 );

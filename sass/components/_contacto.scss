@@ -38,3 +38,58 @@
     width: 30rem;
     height: 22rem;
 }
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+.div2 {
+    grid-area: 5 / 1 / 6 / 6;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 5 / 3;
+    justify-self: center;
+}
+
+.div4 { 
+    grid-area: 2 / 3 / 5 / 4; 
+    justify-self: center;
+    align-self: center;
+}
+
+.div5 { 
+    grid-area: 2 / 4 / 5 / 5; 
+    justify-self: center;
+}
+
+.div12{
+    grid-area: 1 / 2 / 3 / 3;
+    margin-top: 2rem;
+}
+
+.div13{
+    grid-area: 1 / 3 / 3 / 4;
+    margin-top: 2rem;
+}
+
+.div14{
+    grid-area: 1 / 4 / 3 / 5;
+    margin-top: 2rem;
+}
+
+.div15{
+    grid-area: 3 / 1 / 4 / 6;
+    justify-self: center;
+    margin-top: 20rem;
+}
+
+.div10{
+    display: flex;
+    justify-content: center;
+}

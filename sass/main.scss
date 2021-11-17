@@ -6,6 +6,11 @@
 @import "components/novedades";
 @import "components/animaciones";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .buscar{
     background-image: nth($colores, 1);
 }
@@ -31,59 +36,87 @@
     margin-left: 3rem; 
 }
 
-main{
-    background-color: #f9f9f9;
-}
-
 .curvTitulo{
-    color: #125636;
-    font-family: 'Ephesis', cursive;
-    font-size: 60px;
-    line-height: 7rem;
-    text-align: center;
+    color: map-get($map: $color, $key: letra1);
+    font-family: map-get($map: $fuente, $key: fuente1);
+    font-size: map-get($map: $tama, $key: tama1);
+    line-height: map-get($map: $distancia, $key: dis1);
+    text-align: map-get($map: $alineacion, $key: alig1);
 }
 
 .letra{
-    color: #615f2d;
-    font-family: 'Ephesis', cursive;
-    font-size: 30px;
-    text-align: center;
+    color: map-get($map: $color, $key: letra2);
+    font-family: map-get($map: $fuente, $key: fuente1);
+    font-size: map-get($map: $tama, $key: tama2);
+    text-align: map-get($map: $alineacion, $key: alig1);
 }
 
 .letraS{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 2rem;
+    font-family: map-get($map: $fuente, $key: fuente2);
+    font-size: map-get($map: $tama, $key: tama3);
+    font-weight: map-get($map: $negrita, $key: negrita1);
+    line-height: map-get($map: $distancia, $key: dis2);
     padding: 2rem;
+    text-align: map-get($map: $alineacion, $key: alig1);
 }
 
 .novedad{
     background-image: none;
-    color: #194069;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: bolder;
+    color: map-get($map: $color, $key: letra3);
+    font-family: map-get($map: $fuente, $key: fuente2);
+    font-size: map-get($map: $tama, $key: tama4);
+    font-weight: map-get($map: $negrita, $key: negrita1);
     margin-left: 27rem;
 }
 
 h1{
-    color: #194069;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 6rem;
-    text-align: center;
+    color: map-get($map: $color, $key: letra3);
+    font-family: map-get($map: $fuente, $key: fuente2);
+    font-size: map-get($map: $tama, $key: tama5);
+    font-weight: map-get($map: $negrita, $key: negrita2);
+    line-height: map-get($map: $distancia, $key: dis3);
+    text-align: map-get($map: $alineacion, $key: alig1);
     word-spacing: 0.4rem;
 }
 
 h2{
-    color: #194069;
-    font-family: 'Roboto', sans-serif;
-    line-height: 5rem;
-    text-align: center;
+    color: map-get($map: $color, $key: letra3);
+    font-family: map-get($map: $fuente, $key: fuente2);
+    line-height: map-get($map: $distancia, $key: dis4);
+    text-align: map-get($map: $alineacion, $key: alig1);
 }
+
+h3{
+    color: map-get($map: $color, $key: letra4);
+    font-family: map-get($map: $fuente, $key: fuente2);
+    font-weight: map-get($map: $negrita, $key: negrita1);
+    line-height: map-get($map: $distancia, $key: dis5);
+    text-align: map-get($map: $alineacion, $key: alig1);
+    animation-name: nuevosArticulos;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+.texto{
+    background-color: #fdfe45;
+    width: 700px;
+    height: 470px;
+    display: flex;
+    color: map-get($map: $color, $key: letra5);
+    font-family: map-get($map: $fuente, $key: fuente2);
+    font-size: map-get($map: $tama, $key: tama3);
+    font-weight: map-get($map: $negrita, $key: negrita1);
+    text-align: map-get($map: $alineacion, $key: alig1);
+    align-items: center;
+    line-height: map-get($map: $distancia, $key: dis2);
+}
+
+main{
+    background-color: #f9f9f9;
+}
+
 
 .fot{
     background-color: #aacdd1;

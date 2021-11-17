@@ -16,3 +16,12 @@
     margin-left: $margenl;
     width: $ancho;
 }
+
+@mixin letras ($color, $fuente, $tama, $distancia, $alineacion, $negrita){
+    color: $color;
+    font-family: $fuente;
+    font-size: $tama;
+    line-height: $distancia;
+    text-align: $alineacion;
+    font-weight: $negrita;
+}

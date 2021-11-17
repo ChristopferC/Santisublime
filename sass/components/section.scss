@@ -1,0 +1,85 @@
+section{
+    background-color: #e2e2e2;
+}
+
+.seccionNovedad{
+    line-height: 5rem;
+}
+
+.paginaPrin{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+}
+
+.videoPrin{
+    height: 480px;
+    width: 640px;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+    
+.videoSubli{
+    height: 480px;
+    width: 1200px;
+}
+
+.formulario{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    justify-content:space-around;
+}
+
+section img{
+    height: 320px;
+    width: 320px; 
+}
+
+article a{
+    color: #125a38;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+section a{
+    color: #125a38;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+/*SECTION CONTACTO*/
+.face2{
+    margin-left:35rem;
+}
+
+.redes img{
+    height: 100px;
+    width: 95px; 
+}
+
+.redes a{
+    color: #125a38;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faceLink{
+    margin-left:35rem;
+}
+
+.nuevo{
+    height: 340px;
+    width: 320px; 
+}
+
+.wspLink{
+    margin-left:36.5rem;
+}
