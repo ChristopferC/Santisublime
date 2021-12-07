@@ -334,9 +334,6 @@ a:hover {
     height: 320px;
     width: 230px; 
     margin-left: 0rem;}
-    .log {
-      height: 320px;
-      width: 230px;}
   .curvTitulo {
     color: #125636;
     font-family: 'Ephesis', cursive;
@@ -373,11 +370,10 @@ a:hover {
     .videoPrin {
     height: 25px;
     width: 40px; 
-    margin-left: 0rem;} 
-  
-  .log {
-  height: 25px;
-  width: 40px;}
+    margin-left: -4rem;}
+    .videoSubli {
+      height: 25px;
+      width: 40px; } 
   }
 
 section {
