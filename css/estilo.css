@@ -330,7 +330,14 @@ a:hover {
   .videoSubli {
     height: 320px;
     width: 230px; }
+  .video{
+    height: 320px;
+    width: 230px; }
   .videoPrin {
+    height: 320px;
+    width: 230px; 
+    margin-left: 0rem;}
+    .princ{
     height: 320px;
     width: 230px; 
     margin-left: 0rem;}
@@ -371,9 +378,23 @@ a:hover {
     height: 25px;
     width: 40px; 
     margin-left: -4rem;}
+    .princ{
+      height: 25px;
+      width: 40px; 
+      margin-left: -4rem;}
+    .video{
+      height: 25px;
+      width: 40px;
+    }
     .videoSubli {
       height: 25px;
-      width: 40px; } 
+      width: 40px; }
+      .letra {
+        color: #615f2d;
+        font-family: 'Ephesis', cursive;
+        font-size: 5px;
+        text-align: left;
+        display: block; }  
   }
 
 section {
