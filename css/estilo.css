@@ -329,10 +329,14 @@ a:hover {
     height: 25rem; }
   .videoSubli {
     height: 320px;
-    width: 240px; }
+    width: 230px; }
   .videoPrin {
     height: 320px;
-    width: 240px; }
+    width: 230px; 
+    margin-left: 0rem;}
+    .log {
+      height: 320px;
+      width: 230px;}
   .curvTitulo {
     color: #125636;
     font-family: 'Ephesis', cursive;
@@ -365,7 +369,16 @@ a:hover {
     width: 240px !important; }
   .ubicacion {
     height: 320px !important;
-    width: 240px !important; } }
+    width: 240px !important; }
+    .videoPrin {
+    height: 25px;
+    width: 40px; 
+    margin-left: 0rem;} 
+  
+  .log {
+  height: 25px;
+  width: 40px;}
+  }
 
 section {
   background-color: #e2e2e2; }
