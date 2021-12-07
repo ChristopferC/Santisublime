@@ -1,3 +1,62 @@
+/*Para agrandar un poquito el header en pantalla grande*/
+@media (min-width: 769px) {
+    .header {
+    height: 8rem; } }
+
+        .contenedorTextoPrincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+
+        .contenedorTextoPrincipal .contenedorTextoPrincipal__p {
+        margin: 3%;
+        padding: 4% 3%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-top: #242121 0.7rem solid;
+        border-bottom: #242121 0.7rem solid;
+        font-family: "PT Sans", sans-serif, Charter, Georgia, serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 3rem; }
+
+    @media (min-width: 769px) {
+        .contenedorTextoPrincipal .contenedorTextoPrincipal__p {
+            width: 90%;
+            margin: 2%;
+            padding: 2%;
+            font-size: 1.7rem;
+            border-bottom-right-radius: 2rem;
+            border-left: #242121 4rem solid;
+            border-right: #242121 4rem solid;
+            border-top: #242121 0.7rem solid;
+            border-bottom: #242121 0.7rem solid; } }
+    
+    @media (min-width: 769px) {
+        .contenedorTextoPrincipal {
+            width: 100%; } }
+
+@media (min-width: 769px) {
+    /*cuando es mas de 769 pixeles se resetea y el boton se muestra mas chico. es para verlo grande en movil*/
+    .widht100 {
+    width: auto; } }
+
+@media screen and (max-width: 769px) {
+/*para desplegar y ocultar los enlaces del menu hamburguesa en forma circular*/
+/*para ocultar el menu*/
+    .ocultarEnlaces {
+    -webkit-clip-path: circle(0% at 100% 0%);
+    clip-path: circle(0% at 100% 0%); }
+/*para mostrar el menu de forma circular*/
+    .circuloEnlace {
+    -webkit-clip-path: circle(150% at 100% 0%);
+    clip-path: circle(150% at 100% 0%); } }
+
+/*--------------------------------------------------------------*/
+
+            
 @media (max-width: 1200px){
     .section_carousel{
         width: 20rem;
