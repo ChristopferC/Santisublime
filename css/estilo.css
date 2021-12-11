@@ -116,7 +116,7 @@ a:hover {
   grid-row-gap: 0px;
   height: 25rem; }
 
-.boton {
+.boton1 {
   width: 25%;
   height: 10rem;}
 
@@ -341,6 +341,9 @@ a:hover {
     height: 320px;
     width: 230px; 
     margin-left: 0rem;}
+    .carousel-item img {
+      height: 20rem;
+      width: 20rem; }
   .curvTitulo {
     color: #125636;
     font-family: 'Ephesis', cursive;
@@ -359,7 +362,10 @@ a:hover {
     font-family: 'Ephesis', cursive;
     font-size: 10px;
     text-align: center;
-    display: block; } }
+    display: block; } 
+    .boton1 {
+      width: 25%;
+      height: 10rem;}}
 
 @media (max-width: 300px) {
   .section_carousel {
@@ -394,7 +400,13 @@ a:hover {
         font-family: 'Ephesis', cursive;
         font-size: 5px;
         text-align: left;
-        display: block; }  
+        display: block; }
+    .curvTitulo {
+    color: #125636;
+    font-family: 'Ephesis', cursive;
+    font-size: 15px;
+    line-height: 4rem;
+    text-align: center; }  
   }
 
 section {
@@ -865,7 +877,7 @@ iframe {
         border-bottom: #242121 0.7rem solid;
         font-family: "PT Sans", sans-serif, Charter, Georgia, serif;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: left;
         line-height: 3rem; }
       @media (min-width: 769px) {
@@ -873,7 +885,7 @@ iframe {
           width: 90%;
           margin: 2%;
           padding: 2%;
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           border-bottom-right-radius: 2rem;
           border-left: #242121 4rem solid;
           border-right: #242121 4rem solid;
