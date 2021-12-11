@@ -333,10 +333,10 @@ a:hover {
   .video{
     height: 320px;
     width: 230px; }
-  .video-Prin {
+  /* .video-Prin {
     height: 320px;
     width: 230px; 
-    margin-left: 0rem;}
+    margin-left: 0rem;} */
     .princ{
     height: 320px;
     width: 230px; 
@@ -380,10 +380,10 @@ a:hover {
   .ubicacion {
     height: 320px !important;
     width: 240px !important; }
-    .video-Prin {
+    /* .video-Prin {
     height: 25px;
     width: 40px; 
-    margin-left: -4rem;}
+    margin-left: -4rem;} */
     .princ{
       height: 25px;
       width: 40px; 
@@ -660,6 +660,9 @@ iframe {
   .grilla {
     grid-gap: 2rem 0;
   }
+  .video-Prin {
+    height: 25px;
+    width: 40px;
 }
 
   body .container {
@@ -1168,5 +1171,4 @@ iframe {
   .slider #slider__slides__inputRadio4:checked ~ .slider__navegacionAuto .slider__navegacionAuto__btn--4 {
     background: #f8c25c; }
 
-
-      
+}
