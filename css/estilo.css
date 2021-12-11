@@ -333,7 +333,7 @@ a:hover {
   .video{
     height: 320px;
     width: 230px; }
-  .videoPrin {
+  .video-Prin {
     height: 320px;
     width: 230px; 
     margin-left: 0rem;}
@@ -380,7 +380,7 @@ a:hover {
   .ubicacion {
     height: 320px !important;
     width: 240px !important; }
-    .videoPrin {
+    .video-Prin {
     height: 25px;
     width: 40px; 
     margin-left: -4rem;}
@@ -421,7 +421,7 @@ section {
   align-items: center;
   width: 100%; }
 
-.videoPrin {
+.video-Prin {
   height: 480px;
   width: 640px; }
 
@@ -618,6 +618,49 @@ iframe {
   .locales{
     margin-left: 4rem;
   }
+
+  .contenedor_sublima {
+    grid-column-end: span 6;
+  }
+
+  .grilla {
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.intro .grilla {
+  align-items: center;
+  background-color: #FADFDB;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.vide0-Prin {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.resumen {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #194069;
+}
+
+
+@media (max-width: 48rem) {
+
+  /* Con este selector indicamos que ese estilo debe aplicarse a */
+  /* TODOS los elementos que sean hijos directos de la grilla */
+  .grilla > * {
+    grid-column-end: span 12;
+  }
+
+  /* El primer valor corresponde al hueco entre filas */
+  /* El segundo valor corresponde al hueco entre columnas */
+  .grilla {
+    grid-gap: 2rem 0;
+  }
+}
 
   body .container {
     padding: 0 3rem; }
