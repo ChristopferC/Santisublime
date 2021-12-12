@@ -972,7 +972,41 @@ iframe {
           top: 0;
           transform: rotate(90deg);
           transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1); }
-      
+
+
+.razones {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.tarjeta {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+  grid-column-end: span 4;
+  padding: 2rem;
+}
+
+.tarjeta img {
+  /* Para que la imagen de la tarjeta se vea redonda */
+  border-radius: 50%;
+  max-width: 10rem;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
 
 
 @media (max-width: 48rem) {
