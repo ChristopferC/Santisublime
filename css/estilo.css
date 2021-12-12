@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   /*1 rem = 10px*/
-  background-color: #12172a;;
+  background-color: #12172a;
 }
 
 .Error{
@@ -121,7 +121,7 @@ a:hover {
   height: 10rem;}
 
 .ubicacion {
-  display: flex;
+  /* display: flex; */
   height: 340px;
   width: 320px; }
 
@@ -303,7 +303,6 @@ a:hover {
     color: #f0a92c; } }
 
 .wsp {
-  margin-left: 38rem;
   animation: heartBeat;
   animation-duration: 3s;
   animation-iteration-count: infinite; }
@@ -385,16 +384,16 @@ a:hover {
     width: 40px; 
     margin-left: -4rem;} */
     .princ{
-      height: 25px;
-      width: 40px; 
+      height: 320px;
+      width: 230px; 
       margin-left: -4rem;}
     .video{
-      height: 25px;
-      width: 40px;
+      height: 320px;
+      width: 230px;
     }
     .videoSubli {
-      height: 25px;
-      width: 40px; }
+      height: 320px;
+      width: 230px; }
       .letra {
         color: #615f2d;
         font-family: 'Ephesis', cursive;
@@ -406,7 +405,7 @@ a:hover {
     font-family: 'Ephesis', cursive;
     font-size: 15px;
     line-height: 4rem;
-    text-align: center; }  
+    text-align: center; } 
   }
 
 section {
@@ -456,8 +455,8 @@ section a {
   line-height: 3rem; }
 
 /*SECTION CONTACTO*/
-.face2 {
-  margin-left: 35rem; }
+/* .face2 {
+  margin-left: 35rem; } */
 
 .redes img {
   height: 100px;
@@ -474,9 +473,6 @@ section a {
 .nuevo {
   height: 340px;
   width: 320px; }
-
-.wspLink {
-  margin-left: 36.5rem; }
 
 * {
   margin: 0;
@@ -496,6 +492,17 @@ section a {
 .face {
   height: 105;
   width: 100px; }
+
+.face2{
+  height: 100px;
+  width: 95px;
+}
+
+.wsp{
+  height: 100px;
+  width: 95px;
+  justify-content: center;
+}
 
 .logo {
   height: 70px;
@@ -641,9 +648,10 @@ iframe {
 }
 
 .resumen {
-  font-size: 2rem;
-  font-weight: 300;
-  color: #194069;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3f3b3b;
+  font-family: "PT Sans", sans-serif;
 }
 
 /*HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -715,7 +723,7 @@ iframe {
     .header .header__nav .header__nav__logo .header__logo__txt {
       font-size: 1rem;
       font-family: "Krub", sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       font-style: italic; }
     .header .header__nav .header__nav__iconoHamb {
       z-index: 110; }
@@ -737,8 +745,8 @@ iframe {
         text-decoration: none;
         color: #f8f3e3;
         font-family: "Krub", sans-serif;
-        font-weight: 400;
-        font-size: 1rem; }
+        font-weight: 600;
+        font-size: 1.3rem; }
       .header .header__nav .header__nav__enlaces .header__nav__enlaces__a:hover {
         cursor: pointer;
         color: #d83863; }
@@ -974,14 +982,14 @@ iframe {
           transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 
-.razones {
+.novedad_producto {
   padding: 3rem 0;
   text-align: center;
 }
 
 .tarjeta {
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+  box-shadow: rgba(2, 16, 94, 0.507) 0 0 2rem;
   grid-column-end: span 4;
   padding: 2rem;
 }
@@ -989,21 +997,17 @@ iframe {
 .tarjeta img {
   /* Para que la imagen de la tarjeta se vea redonda */
   border-radius: 50%;
-  max-width: 10rem;
+  max-width: 20rem;
   width: 100%;
 }
 
-h3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-h4 {
+.letra-producto {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #194069;
 }
 
-p {
+.letra-material {
   font-size: 1.25rem;
   line-height: 150%;
 }
@@ -1020,7 +1024,7 @@ p {
   .video-Prin {
     height: 320px;
     width: 235px; 
-}
+}}
 
   body .container {
     padding: 0 3rem; }
@@ -1043,14 +1047,14 @@ p {
       body .g-galeriaTrabajos {
         display: grid;
         grid-template-areas: "imagen1 imagen2"
- "imagen3 imagen4"
- "imagen5 imagen6";
+        "imagen3 imagen4"
+        "imagen5 imagen6";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr); } }
     @media only screen and (min-width: 768px) {
       body .g-galeriaTrabajos {
         grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3"
- "imagen4 imagen4 imagen4 imagen5 imagen5 imagen6";
+        "imagen4 imagen4 imagen4 imagen5 imagen5 imagen6";
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr); } }
 
@@ -1103,6 +1107,8 @@ p {
       grid-area: imagen11; }
     body .g-contenedorImagen:nth-child(12) {
       grid-area: imagen12; }
+
+      
     
 
       /*Boton formulario----------------------------------------------------*/
@@ -1239,13 +1245,13 @@ p {
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
         margin: 0;
         font-family: "PT Sans", sans-serif;
-        font-size: 3.4rem;
+        font-size: 1.4rem;
         font-weight: 700;
         color: #f8f3e3; }
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h2 {
         margin: 0;
         font-family: "PT Sans", sans-serif;
-        font-size: 2.8rem;
+        font-size: 0.8rem;
         font-weight: 700;
         color: #f8f3e3; }
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h2--moviendoH1 {
@@ -1259,9 +1265,9 @@ p {
         animation-duration: 2.5s; }
       @media (min-width: 769px) {
         .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
-          font-size: 1rem; }
+          font-size: 5rem; }
         .slider .slider__slides .slider__slides__titulos .slider__titulos__h2 {
-          font-size: 0.6rem; } }
+          font-size: 2.8rem; } }
     .slider .slider__slides .slider__slides__slide {
       width: 20%;
       transition: 2s; }
@@ -1326,4 +1332,129 @@ p {
   .slider #slider__slides__inputRadio4:checked ~ .slider__navegacionAuto .slider__navegacionAuto__btn--4 {
     background: #f8c25c; }
 
+
+    [class*='grid'],
+    [class*='col-'],
+    [class*='mobile-'],
+    .grid:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;	
+    }
+    
+    [class*='col-'] {
+      float: left;
+        min-height: 1px;
+      padding-right: 20px; 
+    }
+    
+    [class*='col-'] [class*='col-']:last-child {
+      padding-right: 0;
+    }
+    
+    .grid {
+      width: 100%;
+      max-width: 1140px;
+      min-width: 748px; 
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    .grid:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .grid-pad {
+      padding-top: 20px;
+      padding-left: 20px; 
+      padding-right: 0; 
+    }
+    
+    .push-right {
+      float: right;
+    }
+    
+    /* Content Columnas */
+    
+    .col-1-1 {
+      width: 100%;
+    }
+    
+    .col-1-2{
+      width: 50%;
+    }
+    
+    .col-1-3{
+      width: 33.33%;
+    }
+
+    /* Pushing blocks */
+    .push-1-2{
+      margin-left: 50%;
+    }
+    
+    .push-1-3{
+      margin-left: 33.33%;
+    }
+    
+    @media handheld, only screen and (max-width: 767px) {
+      .grid {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px; 
+        padding-right: 10px; 
+      }
+    
+      [class*='col-'] {
+        width: auto;
+        float: none;
+        margin: 10px 0;
+        padding-left: 0;
+        padding-right: 10px; 
+      }
+    
+      [class*='col-'] [class*='col-'] {
+        padding-right: 0;
+      }
+    
+      /* Mobile Layout */
+    
+      [class*='mobile-col-'] {
+        float: left;
+        margin: 0 0 10px;
+        padding-left: 0;
+        padding-right: 10px; 
+        padding-bottom: 0;
+      }
+    
+      .mobile-col-1-1 {
+        width: 100%;
+      }
+
+      .mobile-col-1-2{
+        width: 50%;
+      }
+    
+      .mobile-col-1-3{
+        width: 33.33%;
+      }
+    
+      .hide-on-mobile {
+        display: none !important;
+        width: 0;
+        height: 0;
+      }
+    }
+    
+.horario{
+  background-color: #12172a;
+}
+
+.content{
+  text-align: center;
+  justify-items: center;
 }
