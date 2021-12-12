@@ -646,107 +646,6 @@ iframe {
   color: #194069;
 }
 
-
-@media (max-width: 48rem) {
-
-  /* Con este selector indicamos que ese estilo debe aplicarse a */
-  /* TODOS los elementos que sean hijos directos de la grilla */
-  .grilla > * {
-    grid-column-end: span 12;
-  }
-
-  /* El primer valor corresponde al hueco entre filas */
-  /* El segundo valor corresponde al hueco entre columnas */
-  .grilla {
-    grid-gap: 2rem 0;
-  }
-  .video-Prin {
-    height: 320px;
-    width: 235px; 
-}
-
-  body .container {
-    padding: 0 3rem; }
-    @media only screen and (min-width: 768px) {
-      body .container {
-        padding: 0; } }
-  body .g-galeriaTrabajos {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "imagen1"
- "imagen2"
- "imagen3"
- "imagen4"
- "imagen5"
- "imagen6";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px; }
-    @media only screen and (min-width: 576px) {
-      body .g-galeriaTrabajos {
-        display: grid;
-        grid-template-areas: "imagen1 imagen2"
- "imagen3 imagen4"
- "imagen5 imagen6";
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr); } }
-    @media only screen and (min-width: 768px) {
-      body .g-galeriaTrabajos {
-        grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3"
- "imagen4 imagen4 imagen4 imagen5 imagen5 imagen6";
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr); } }
-
-  body .g-contenedorImagen {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #F5F5F5 100%);
-    border: 1px solid #e6e6e6;
-    border-radius: 12px;
-    transition: all ease-in-out 100ms;
-    animation-name: aparecerImages;
-    animation-duration: 1s;
-    overflow: hidden; }
-    body .g-contenedorImagen:hover {
-      border: 1px solid #e6e6e6;
-      background: radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #FFFFFF 100%); }
-      @media only screen and (min-width: 576px) {
-        body .g-contenedorImagen:hover {
-          transform: scale(120%);
-          box-shadow: 0px 20px 15px #00000030; } }
-    body .g-contenedorImagen img {
-      height: auto;
-      width: 100%;
-      max-width: 198px; }
-    body .g-contenedorImagen:nth-child(1) {
-      grid-area: imagen1; }
-    body .g-contenedorImagen:nth-child(2) {
-      grid-area: imagen2; }
-    body .g-contenedorImagen:nth-child(3) {
-      grid-area: imagen3; }
-    body .g-contenedorImagen:nth-child(4) {
-      grid-area: imagen4; }
-    body .g-contenedorImagen:nth-child(5) {
-      grid-area: imagen5; }
-    body .g-contenedorImagen:nth-child(6) {
-      grid-area: imagen6; }
-    body .g-contenedorImagen:nth-child(7) {
-      grid-area: imagen7; }
-    body .g-contenedorImagen:nth-child(8) {
-      grid-area: imagen8; }
-    body .g-contenedorImagen:nth-child(9) {
-      grid-area: imagen9; }
-    body .g-contenedorImagen:nth-child(10) {
-      grid-area: imagen10; }
-    body .g-contenedorImagen:nth-child(11) {
-      grid-area: imagen11; }
-    body .g-contenedorImagen:nth-child(12) {
-      grid-area: imagen12; }
-    
 /*HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .header {
   width: 100%;
@@ -950,6 +849,228 @@ iframe {
       font-weight: 600;
       color: #06273a; }
 
+      :root {
+        --primario: #242121;
+        --secundario: #f8c25c;
+        --blanco: #f8f3e3;
+        --rojo: #d83863;    
+        --azul: #0097a7;
+        --azulOscuro: #06273a;
+        --rojizo: #ff2047;
+        --gris: #f3f3f3;    
+        --otroGris: #757575;
+        --negro: #000000;
+        --negrotransparentado: #00000050;
+      }
+      
+      /*!
+       * Hamburgers
+       * @description Tasty CSS-animated hamburgers
+       * @author Jonathan Suh @jonsuh
+       * @site https://jonsuh.com/hamburgers
+       * @link https://github.com/jonsuh/hamburgers
+       */
+      .hamburger {
+        padding: 15px 15px 5px 15px;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible; }
+        .hamburger:hover {
+          opacity: 0.7; }
+        .hamburger.is-active:hover {
+          opacity: 0.7; }
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner::before,
+        .hamburger.is-active .hamburger-inner::after {
+          background-color: var(--rojo); }
+      
+      .hamburger-box {
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        position: relative; }
+      
+      .hamburger-inner {
+        display: block;
+        top: 50%;
+        margin-top: -2px; }
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+          width: 40px;
+          height: 4px;
+          background-color: var(--blanco);
+          border-radius: 4px; 
+          position: absolute;
+          transition-property: transform;
+          transition-duration: 0.15s;
+          transition-timing-function: ease; }
+        .hamburger-inner::before, .hamburger-inner::after {
+          content: "";
+          display: block; }
+        .hamburger-inner::before {
+          top: -10px; }
+        .hamburger-inner::after {
+          bottom: -10px; }
+      
+      /*
+         * Spring
+         */
+      .hamburger--spring .hamburger-inner {
+        top: 2px;
+        transition: background-color 0s 0.13s linear; }
+        .hamburger--spring .hamburger-inner::before {
+          top: 10px;
+          transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+        .hamburger--spring .hamburger-inner::after {
+          top: 20px;
+          transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      
+      .hamburger--spring.is-active .hamburger-inner {
+        transition-delay: 0.22s;
+        background-color: transparent !important; }
+        .hamburger--spring.is-active .hamburger-inner::before {
+          top: 0;
+          transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, 10px, 0) rotate(45deg); }
+        .hamburger--spring.is-active .hamburger-inner::after {
+          top: 0;
+          transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, 10px, 0) rotate(-45deg); }
+      
+      /*
+         * Spring Reverse
+         */
+      .hamburger--spring-r .hamburger-inner {
+        top: auto;
+        bottom: 0;
+        transition-duration: 0.13s;
+        transition-delay: 0s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+        .hamburger--spring-r .hamburger-inner::after {
+          top: -20px;
+          transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear; }
+        .hamburger--spring-r .hamburger-inner::before {
+          transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      
+      .hamburger--spring-r.is-active .hamburger-inner {
+        transform: translate3d(0, -10px, 0) rotate(-45deg);
+        transition-delay: 0.22s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+        .hamburger--spring-r.is-active .hamburger-inner::after {
+          top: 0;
+          opacity: 0;
+          transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear; }
+        .hamburger--spring-r.is-active .hamburger-inner::before {
+          top: 0;
+          transform: rotate(90deg);
+          transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1); }
+      
+
+
+@media (max-width: 48rem) {
+  .grilla > * {
+    grid-column-end: span 12;
+  }
+
+  .grilla {
+    grid-gap: 2rem 0;
+  }
+  .video-Prin {
+    height: 320px;
+    width: 235px; 
+}
+
+  body .container {
+    padding: 0 3rem; }
+    @media only screen and (min-width: 768px) {
+      body .container {
+        padding: 0; } }
+  body .g-galeriaTrabajos {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "imagen5"
+    "imagen6";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px; }
+    @media only screen and (min-width: 576px) {
+      body .g-galeriaTrabajos {
+        display: grid;
+        grid-template-areas: "imagen1 imagen2"
+ "imagen3 imagen4"
+ "imagen5 imagen6";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media only screen and (min-width: 768px) {
+      body .g-galeriaTrabajos {
+        grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3"
+ "imagen4 imagen4 imagen4 imagen5 imagen5 imagen6";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+
+  body .g-contenedorImagen {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #F5F5F5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    transition: all ease-in-out 100ms;
+    animation-name: aparecerImages;
+    animation-duration: 1s;
+    overflow: hidden; }
+    body .g-contenedorImagen:hover {
+      border: 1px solid #e6e6e6;
+      background: radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #FFFFFF 100%); }
+      @media only screen and (min-width: 576px) {
+        body .g-contenedorImagen:hover {
+          transform: scale(120%);
+          box-shadow: 0px 20px 15px #00000030; } }
+    body .g-contenedorImagen img {
+      height: auto;
+      width: 100%;
+      max-width: 198px; }
+    body .g-contenedorImagen:nth-child(1) {
+      grid-area: imagen1; }
+    body .g-contenedorImagen:nth-child(2) {
+      grid-area: imagen2; }
+    body .g-contenedorImagen:nth-child(3) {
+      grid-area: imagen3; }
+    body .g-contenedorImagen:nth-child(4) {
+      grid-area: imagen4; }
+    body .g-contenedorImagen:nth-child(5) {
+      grid-area: imagen5; }
+    body .g-contenedorImagen:nth-child(6) {
+      grid-area: imagen6; }
+    body .g-contenedorImagen:nth-child(7) {
+      grid-area: imagen7; }
+    body .g-contenedorImagen:nth-child(8) {
+      grid-area: imagen8; }
+    body .g-contenedorImagen:nth-child(9) {
+      grid-area: imagen9; }
+    body .g-contenedorImagen:nth-child(10) {
+      grid-area: imagen10; }
+    body .g-contenedorImagen:nth-child(11) {
+      grid-area: imagen11; }
+    body .g-contenedorImagen:nth-child(12) {
+      grid-area: imagen12; }
+    
+
       /*Boton formulario----------------------------------------------------*/
 .boton {
   position: relative;
@@ -1104,9 +1225,9 @@ iframe {
         animation-duration: 2.5s; }
       @media (min-width: 769px) {
         .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
-          font-size: 2rem; }
+          font-size: 1rem; }
         .slider .slider__slides .slider__slides__titulos .slider__titulos__h2 {
-          font-size: 1.8rem; } }
+          font-size: 0.6rem; } }
     .slider .slider__slides .slider__slides__slide {
       width: 20%;
       transition: 2s; }

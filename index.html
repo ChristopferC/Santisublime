@@ -17,45 +17,54 @@
 
     <body>  
 
-        <header class="header">
+        <header>
 
-            <!--Menu de navegacion principal-->
-            <nav class="header__nav">
-
-                <a href="../index.html"><video class="log" alt="logoSantisublime" src=recursos/videos/santisublime3.mp4 muted autoplay loop></video></a> <!-- Fin de Logo -->
-
-                <!--Icono de menu hamburguesa-->
-                <button class="header__nav__iconoHamb hamburger hamburger--spring-r" type="button"
-                    id="header__nav__iconoHamb">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button> 
-                <!-- Fin Icono de menu hamburguesa -->
-
-                <!-- Comienzo enlaces de navegación entre paginas-->
-                <ul class="header__nav__enlaces ocultarEnlaces" id="header__nav__enlaces">
-                    <li>
-                        <a class="header__nav__enlaces__a header__nav__enlaces__a--active" href="#">INICIO</a>
-                    </li>
-                    <li>
-                        <a class="header__nav__enlaces__a header__nav__enlaces__a--pse" href="paginas/productosSublimados.html">PRODUCTOS SUBLIMADOS</a>
-                    </li>
-                    <li>
-                        <a class="header__nav__enlaces__a header__nav__enlaces__a--pse"
-                        href="paginas/productosParaSublimar.html">PRODUCTOS PARA SUBLIMAR</a>
-                    </li>
-                    <li>
-                        <a class="header__nav__enlaces__a header__nav__enlaces__a--pse" href="paginas/novedades.html">NOVEDADES</a>
-                    </li>
-                    <li>
-                        <a class="header__nav__enlaces__a header__nav__enlaces__a--pse" href="paginas/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <!-- Fin enlaces de navegación entre paginas-->
-
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><video class="log" alt="logoSantisublime" src=videos/santisublime3.mp4 muted autoplay loop></video></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="productosSublimados.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS SUBLIMADOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="productosSublimados.html#taza">TAZAS</a></li>
+                                    <li><a class="dropdown-item" href="productosSublimados.html#almohadones">ALMOHADONES</a></li>
+                                    <li><a class="dropdown-item" href="productosSublimados.html#artículosVarios">ARTÍCULOS VARIOS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="productosParaSublimar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS PARA SUBLIMAR
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="productosParaSublimar.html#tazasElab">TAZAS</a></li>
+                                    <li><a class="dropdown-item" href="productosParaSublimar.html#termosMates">TERMOS Y MATES</a></li>
+                                    <li><a class="dropdown-item" href="productosParaSublimar.html#mochilas">MOCHILAS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="novedades.html">NOVEDADES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"></div>
+                            <button class="buscar btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
-
+            <br>
         </header>
 
         <main>
@@ -129,7 +138,7 @@
             <div class="grilla">
                 <div class="grilla">
                     <div class="contenedor_sublima">
-                        <h4 class="resumen" data-aos="fade-down">La sublimación se adapta a todo tipo de superficies, permitiendo sublimar aquellas que no son planas. Además la impresión no se despega del producto ni se cuartea; ofrece una excelente calidad de imagen con colores vivos y contrastados</h2>
+                        <h4 class="resumen" data-aos="fade-">La sublimación se adapta a todo tipo de superficies, permitiendo sublimar aquellas que no son planas. Además la impresión no se despega del producto ni se cuartea; ofrece una excelente calidad de imagen con colores vivos y contrastados</h2>
                     </div>
                     <div class="contenedor_sublima">
                         <video class="video-Prin" src="recursos/videos/santisublimePortada.mp4" autoplay controls> </video>
@@ -243,7 +252,7 @@
                     }
                 }, 8000);
             </script>
-            <script src="./js/main.js"></script>
+            <script src="js/main.js"></script>
 
     </body>
 </html>
