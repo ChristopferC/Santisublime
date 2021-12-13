@@ -326,23 +326,16 @@ a:hover {
   .eslogan {
     width: 100%;
     height: 25rem; }
-  .videoSubli {
-    height: 320px;
-    width: 230px; }
   .video{
     height: 320px;
     width: 230px; }
-  /* .video-Prin {
-    height: 320px;
-    width: 230px; 
-    margin-left: 0rem;} */
-    .princ{
+  .princ{
     height: 320px;
     width: 230px; 
     margin-left: 0rem;}
-    .carousel-item img {
-      height: 20rem;
-      width: 20rem; }
+  .carousel-item img {
+    height: 20rem;
+    width: 20rem; }
   .curvTitulo {
     color: #125636;
     font-family: 'Ephesis', cursive;
@@ -362,9 +355,9 @@ a:hover {
     font-size: 10px;
     text-align: center;
     display: block; } 
-    .boton1 {
-      width: 25%;
-      height: 10rem;}}
+  .boton1 {
+    width: 25%;
+    height: 10rem;}}
 
 @media (max-width: 300px) {
   .section_carousel {
@@ -379,10 +372,6 @@ a:hover {
   .ubicacion {
     height: 320px !important;
     width: 240px !important; }
-    /* .video-Prin {
-    height: 25px;
-    width: 40px; 
-    margin-left: -4rem;} */
     .princ{
       height: 320px;
       width: 230px; 
@@ -391,21 +380,26 @@ a:hover {
       height: 320px;
       width: 230px;
     }
-    .videoSubli {
-      height: 320px;
-      width: 230px; }
-      .letra {
-        color: #615f2d;
-        font-family: 'Ephesis', cursive;
-        font-size: 5px;
-        text-align: left;
-        display: block; }
+    .letra {
+      color: #615f2d;
+      font-family: 'Ephesis', cursive;
+      font-size: 5px;
+      text-align: left;
+      display: block; }
     .curvTitulo {
-    color: #125636;
-    font-family: 'Ephesis', cursive;
-    font-size: 15px;
-    line-height: 4rem;
-    text-align: center; } 
+      color: #125636;
+      font-family: 'Ephesis', cursive;
+      font-size: 15px;
+      line-height: 4rem;
+      text-align: center; } 
+    iframe {
+      border: 0;
+      height: 80px;
+      margin-left: 0.3rem;
+      width: 85px; }
+    hr{
+      margin-left: 0.3rem;
+    }
   }
 
 section {
@@ -429,7 +423,7 @@ section {
   position: absolute;
   top: 50vh; }
 
-.videoSubli {
+.video-subli {
   height: 480px;
   width: 1200px; }
 
@@ -453,10 +447,6 @@ section a {
   color: #125a38;
   font-weight: bold;
   line-height: 3rem; }
-
-/*SECTION CONTACTO*/
-/* .face2 {
-  margin-left: 35rem; } */
 
 .redes img {
   height: 100px;
@@ -1024,7 +1014,11 @@ iframe {
   .video-Prin {
     height: 320px;
     width: 235px; 
-}}
+  }
+  .video-subli {
+    height: 320px;
+    width: 235px; }
+}
 
   body .container {
     padding: 0 3rem; }
@@ -1245,13 +1239,13 @@ iframe {
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
         margin: 0;
         font-family: "PT Sans", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: 700;
         color: #f8f3e3; }
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h2 {
         margin: 0;
         font-family: "PT Sans", sans-serif;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: #f8f3e3; }
       .slider .slider__slides .slider__slides__titulos .slider__titulos__h2--moviendoH1 {
