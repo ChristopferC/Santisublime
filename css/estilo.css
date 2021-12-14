@@ -1005,9 +1005,13 @@ background-color: #242121; }
     font-family: "Roboto" "sans-serif";
     font-size: 25px;
     font-weight: 600;
-    line-height: 6rem;
+    line-height: 3rem;
     text-align: center;
-    word-spacing: 0.2rem; }
+    word-spacing: 0.1rem; }
+  h2{
+    line-height: 3rem;}
+  .first {
+    margin-left: 0.2rem; }
   .nuevo {
     height: 300px;
     width: 210px; }
@@ -1258,14 +1262,14 @@ body .g-contenedorImagen:nth-child(12) {
 .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #f8f3e3; }
 
 .slider .slider__slides .slider__slides__titulos .slider__titulos__h2 {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #f8f3e3; }
 
