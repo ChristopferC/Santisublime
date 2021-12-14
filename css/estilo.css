@@ -987,10 +987,10 @@ background-color: #242121; }
     grid-gap: 2rem 0;}
   .video-Prin {
     height: 320px;
-    width: 235px; }
+    width: 245px; }
   .video-subli {
     height: 320px;
-    width: 235px; }
+    width: 245px; }
   .location {
     border: 0;
     height: 280px;
@@ -1011,7 +1011,7 @@ background-color: #242121; }
   h2{
     line-height: 3rem;}
   .first {
-    margin-left: 0.2rem; }
+    margin-left: 0.5rem; }
   .nuevo {
     height: 300px;
     width: 210px; }
