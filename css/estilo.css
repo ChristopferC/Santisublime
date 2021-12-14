@@ -161,7 +161,7 @@ a:hover {
   width: 30rem;
   height: 22rem; }
 
-/* .div1 {
+.div1 {
   grid-area: 1 / 1 / 2 / 6;
   justify-self: center;
   align-self: center; }
@@ -204,7 +204,7 @@ a:hover {
 
 .div10 {
   display: flex;
-  justify-content: center; } */
+  justify-content: center; }
 
 .ubicacion {
   height: 340px;
@@ -994,7 +994,7 @@ background-color: #242121; }
   .location {
     border: 0;
     height: 280px;
-    width: 220px; }
+    width: 270px; }
   hr{
     height: 115px;
     width: 100%;
@@ -1258,7 +1258,7 @@ body .g-contenedorImagen:nth-child(12) {
 .slider .slider__slides .slider__slides__titulos .slider__titulos__h1 {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #f8f3e3; }
 
