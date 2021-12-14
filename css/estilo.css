@@ -1010,7 +1010,8 @@ background-color: #242121; }
     text-align: center;
     word-spacing: 0.1rem; }
   h2{
-    line-height: 3rem;}
+    line-height: 3rem;
+    font-size: 18px;}
   .first {
     margin-left: 0.6rem; }
   .nuevo {
