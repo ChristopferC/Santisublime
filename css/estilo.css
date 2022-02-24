@@ -312,6 +312,17 @@ a:hover {
   animation-duration: 3s;
   animation-iteration-count: infinite; }
 
+body .whatsapp {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 50px;
+}
+body .whatsapp:hover {
+  transition: all 1s;
+  transform: rotate(380deg) scale(2);
+}
+
 #pedido {
   animation-name: nuevosArticulos;
   animation-iteration-count: infinite;
@@ -390,6 +401,118 @@ a:hover {
     font-size: 15px;
     line-height: 4rem;
     text-align: center; } }
+
+.borrar-producto {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.barra {
+  padding: 20px 0;
+  background: #741d51; /* Old browsers */
+  background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+  margin:0;
+  color: white;
+}
+.icono {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.barra {
+  padding: 20px 0;
+  background: #741d51; /* Old browsers */
+  background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+  margin:0;
+  color: white;
+}
+
+#lista-productos .row {
+  margin-bottom:20px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+}
+
+@media (min-width: 550px) {
+  .card {
+      text-align: left;
+  }
+}
+
+.icono1 {
+  background-image: url(../recursos/imagenes/icono1.png);
+}
+
+.icono2 {
+  background-image: url(../recursos/imagenes/icono2.png);
+}
+
+.icono3 {
+  background-image: url(../recursos/imagenes/icono3.png);
+}
+
+.info-card  {
+  padding: 10px 20px;
+}
+
+.info-card p, 
+.card h4 {
+  margin-bottom: 5px;
+}
+
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 22px;
+}
 
 section {
   background-color: #e2e2e2; }
@@ -1466,3 +1589,70 @@ body .g-contenedorImagen:nth-child(12) {
 .content{
   text-align: center;
   justify-items: center;}
+
+.cajon {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .cajon {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #e1e1e1;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }

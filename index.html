@@ -54,6 +54,31 @@
                 </ul>
                 <!-- Fin enlaces de navegación entre paginas-->
 
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="recursos/imagenes/cart.png" id="img-carrito">
+                            <div id="carrito">
+
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table><br>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
 
         </header>
@@ -116,6 +141,10 @@
 
         </main>
 
+        <div  class="whatsappContainer ">
+            <a  href="https://www.whatsapp.com/catalog/5491144464540/?app_absent=0"><img  src="recursos/imagenes/whatsapp64.png" alt="whatsapp" class="whatsapp"></a>
+        </div>
+
         <section>
             <!--texto principal inicio -->
             <div class="curvTitulo" data-aos="fade-right">¿Qué es la sublimación?</div>
@@ -124,21 +153,90 @@
                 </p>
             </div>
         </section> <!--texto principal fin-->
-
-        <section class="intro">
-            <div class="grilla">
-                <div class="grilla">
-                    <div class="contenedor_sublima">
-                        <h4 class="resumen" data-aos="fade-">La sublimación se adapta a todo tipo de superficies, permitiendo sublimar aquellas que no son planas. Además la impresión no se despega del producto ni se cuartea; ofrece una excelente calidad de imagen con colores vivos y contrastados</h2>
+        
+    
+        <div class="barra">
+            <div class="cajon">
+                <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Comentanos tu idea<br>
+                            Explora los estilos más recientes</p>
                     </div>
-                    <div class="contenedor_sublima">
-                        <video class="video-Prin" src="recursos/videos/santisublimePortada.mp4" autoplay controls> </video>
+                    <div class="four columns icono icono2">
+                        <p>Productos de calidad<br>
+                            Los mejores materiales para la sublimación</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Tu producto en minutos<br>
+                            Elegilo y lo sublimamos en el acto</p>
                     </div>
                 </div>
             </div>
-        </section>
+    
+        </div>
+    
+        <div id="lista-productos" class="cajon">
+            <h1 id="encabezado" class="encabezado">Productos Destacados</h1>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="recursos/imagenes/santisublime1.jpg" class="imagen-producto u-full-width">
+                        <div class="info-card">
+                            <h4>Centro de mesa</h4>
+                            <p>Centro de mesa</p>
+                            <p class="precio">$200 <span class="u-pull-right ">$177</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                                Al Carrito</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="recursos/imagenes/santisublime2.jpg" class="imagen-producto u-full-width">
+                        <div class="info-card">
+                            <h4>Botella hidratante</h4>
+                            <p>Botella hidratante</p>
+                            <p class="precio">$120 <span class="u-pull-right ">$100</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
+                                Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="recursos/imagenes/santisublime5.jpg" class="imagen-producto u-full-width">
+                        <div class="info-card">
+                            <h4>Taza "Los Simpson"</h4>
+                            <p>Taza "Los Simpson"</p>
+                            <p class="precio">$230 <span class="u-pull-right ">$200</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
+                                Al Carrito</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+    
+            </div>
 
-        <hr>
+            <br>
+
+            <section class="intro">
+                <div class="grilla">
+                    <div class="grilla">
+                        <div class="contenedor_sublima">
+                            <h4 class="resumen" data-aos="fade-">La sublimación se adapta a todo tipo de superficies, permitiendo sublimar aquellas que no son planas. Además la impresión no se despega del producto ni se cuartea; ofrece una excelente calidad de imagen con colores vivos y contrastados</h2>
+                        </div>
+                        <div class="contenedor_sublima">
+                            <video class="video-Prin" src="recursos/videos/santisublimePortada.mp4" autoplay controls muted> </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+
+            <br>
 
         <section>
 
@@ -235,6 +333,7 @@
                 }, 8000);
             </script>
             <script src="./js/main.js"></script>
+            <script src="./js/app.js"></script>
 
     </body>
 </html>
