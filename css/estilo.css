@@ -505,10 +505,9 @@ body .whatsapp:hover {
 }
 
 .info-card .precio {
-  text-decoration: line-through;
-  font-size: 18px;
-  margin-top: 10px;
+  text-decoration: blink;
 }
+
 .info-card .precio span {
   font-weight: 700;
   font-size: 22px;
