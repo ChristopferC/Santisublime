@@ -1612,7 +1612,7 @@ body .g-contenedorImagen:nth-child(12) {
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
+  .cajon {
     width: 80%; }
   .column,
   .columns {
